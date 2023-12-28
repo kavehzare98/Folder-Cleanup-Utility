@@ -10,7 +10,7 @@
 
 Simplify your file organization with the Folder Cleanup Utility—a collection of Python scripts designed to streamline the management of cluttered directories. This repository provides a set of versatile scripts that intelligently categorize files based on their extensions, effortlessly tidying up your folders and enhancing overall organization.
 
-### C. Benefits
+## C. Benefits
 
 1. **Efficiency:** With organized folders, users can locate and access files more efficiently. This is particularly useful for individuals who work with a variety of file types and need a streamlined system for managing their data.
 
