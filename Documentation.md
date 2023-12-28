@@ -22,7 +22,7 @@ The provided Python script is a folder cleanup utility that organizes files in t
 
 ### User-defined Base Path and Destination Directories:
 
-- `BASE_PATH`: The user's home directory.
+- `BASE_PATH`: The user's base directory where the files are all located.
 - `DEST_DIRS`: List of destination directories to organize files into.
 
 ### Directory Creation:
@@ -44,7 +44,7 @@ The provided Python script is a folder cleanup utility that organizes files in t
 
 ### Notes:
 
-- The script ignores hidden files (those starting with a dot `.`) in the Downloads directory.
+- The script ignores hidden files (those starting with a dot `.`) in the directory.
 - File extensions are case-sensitive.
 
 ### Disclaimer:
