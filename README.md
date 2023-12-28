@@ -1,9 +1,5 @@
 # Folder Cleanup Utility
 
-UID: 202312281821
-Created: December 28, 2023 10:21 AM
-Last Edited: December 28, 2023 10:53 AM
-
 ## Description
 
 Simplify your file organization with the Folder Cleanup Utility—a collection of Python scripts designed to streamline the management of cluttered directories. This repository provides a set of versatile scripts that intelligently categorize files based on their extensions, effortlessly tidying up your folders and enhancing overall organization
