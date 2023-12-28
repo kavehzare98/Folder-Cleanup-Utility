@@ -32,7 +32,7 @@ In summary, the software streamlines the process of organizing files, saving use
 
 ## E. Getting Started
 
-1. Clone the repository to your local machine:git clone <https://github.com/your-username/folder-cleanup-utility.git>
+1. Clone the repository to your local machine:
 
     
     ```bash
