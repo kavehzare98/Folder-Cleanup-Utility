@@ -1,6 +1,4 @@
 # Import necessary modules
-import os
-import collections
 from pprint import pprint as visualize
 from funcs import *
 
