@@ -7,7 +7,7 @@ from pprint import pprint
 # Define file extension categories for different types of files
 ext_dict = {'Music': ['mp3','wav','wma','mid','midi'], 
             'Movies': ['mp4', 'mpg', 'mpeg', 'avi','mov','flv','mkv', 'mwv', 'm4v', 'h264'],
-            'Pictures': ['png','jpg','JPG','jpeg','gif','svg','bmp','psd','tiff','tif','HEIC'],
+            'Pictures': ['png','jpg','JPG','jpeg','gif','svg','bmp','psd','tiff','tif','HEIC', 'webp'],
             'Documents': ['txt','pdf','csv','xls','xlsx','ods','doc','docx','ppt','pptx'],
             'Compressed Files': ['zip', 'z', 'tar', 'pkg', 'deb'],
             'Executables': ['dmg','exe','iso'],
