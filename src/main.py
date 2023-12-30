@@ -27,9 +27,13 @@ def main():
         # Map files from folder based on their file extension
         files_map = down_funcs.mapFileExtensions(DOWNLOADS_PATH)
 
+        print('\n')
+
         visualize(files_map)
 
         down_funcs.moveFiles(DOWNLOADS_PATH, BASE_PATH, files_map)
+
+        print("Success\n")
 
     # Cleanup Documents Folder
     elif user_input == 2:
@@ -45,12 +49,15 @@ def main():
         # Map files from Documents folder based on their file extension
         files_map = docs_funcs.mapFileExtensions(BASE_PATH)
 
+        print("\n")
         # Print the initial mapping for visual inspection
         visualize(files_map)
 
         # Move files to their respective folders based on file extension
         docs_funcs.moveFiles(files_map, BASE_PATH)
-
+        
+        print("Success\n")
+        
     else:
         print("ERROR! Unable to perform requested task.")
 
