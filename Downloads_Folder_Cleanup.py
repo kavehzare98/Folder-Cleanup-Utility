@@ -15,7 +15,7 @@ createDirectories(DEST_DIRS, BASE_PATH)
 DOWNLOADS_PATH = os.path.join(BASE_PATH, 'Downloads')
 
 # Map files from folder based on their file extension
-files_map = mapFileExntensions(DOWNLOADS_PATH)
+files_map = mapFileExtensions(DOWNLOADS_PATH)
 
 visualize(files_map)
 
