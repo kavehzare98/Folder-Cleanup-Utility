@@ -1,8 +1,6 @@
 import os
 import collections
-
-# library used to print more visually
-from pprint import pprint
+from pprint import pprint as visualize
 
 # Define file extensions for different categories
 EXT_TXT = ['txt']
@@ -34,7 +32,7 @@ for file_name in files_list:
         files_mapping[file_ext].append(file_name)
 
 # Print the initial mapping for visual inspection
-pprint(files_mapping)
+visualize(files_mapping)
 
 # Move files to their respective folders based on file extension
 for f_ext, f_list in files_mapping.items():
