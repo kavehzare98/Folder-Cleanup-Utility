@@ -62,3 +62,5 @@ To use the script:
 - Directories are created only if they do not already exist.
 
 Feel free to modify the script or its documentation based on your specific requirements or coding conventions.
+
+🌈 **Happy Coding!** 🌟
