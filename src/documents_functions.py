@@ -1,4 +1,4 @@
-# downloads_functions.py
+# documents_functions.py
 
 import os
 import collections
