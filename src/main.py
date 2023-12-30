@@ -16,7 +16,7 @@ def main():
         BASE_PATH = os.path.expanduser('~')
 
         # Create directories where we want to store the files
-        DEST_DIRS = ['Music', 'Movies', 'Pictures', 'Documents', 'Executables', 'Other', 'Programming']
+        DEST_DIRS = ['Music', 'Movies', 'Pictures', 'Documents', 'Executables', 'Other', 'Programming', 'Compressed Files']
 
         # Directories are created only if directory does not exist
         down_funcs.createDirectories(DEST_DIRS, BASE_PATH)
