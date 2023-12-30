@@ -19,4 +19,4 @@ files_map = mapFileExntensions(DOWNLOADS_PATH)
 
 visualize(files_map)
 
-moveFiles(DOWNLOADS_PATH, BASE_PATH)
+moveFiles(DOWNLOADS_PATH, BASE_PATH, files_map)
