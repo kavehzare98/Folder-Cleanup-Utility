@@ -1,7 +1,9 @@
+# downloads_functions.py
+
 import os
 import collections
 
-# Define file extensions for different categories
+# Define file extensions for different categories in the Downloads folder
 ext_dict = {'Text': ['txt'], 
             'PDF': ['pdf'],
             'Spreadsheet': ['csv', 'xls', 'xlsx'],
@@ -9,7 +11,7 @@ ext_dict = {'Text': ['txt'],
             'Presentations': ['ppt', 'pptx'],
             'Compressed Files': ['zip', 'z', 'tar', 'pkg', 'deb']}
 
-# Create directories where we want to store the files
+# Function to create directories in a given base path
 def createDirectories(destination_directories, base_path):
     for dir in destination_directories:
         dir_path = os.path.join(base_path, dir)
@@ -17,7 +19,7 @@ def createDirectories(destination_directories, base_path):
             os.mkdir(dir_path)
             print(f"Created a directory for '{dir}'")
 
-# Map files from Documents folder based on their file extension
+# Function to map files in a folder based on their file extension
 def mapFileExtensions(base_path):
     files_mapping = collections.defaultdict(list)
     files_list = os.listdir(base_path)
@@ -31,7 +33,7 @@ def mapFileExtensions(base_path):
 
     return files_mapping
 
-# Move files to their respective folders based on file extension
+# Function to move files to their respective folders based on file extension
 def moveFiles(map, base_path):
     for f_ext, f_list in map.items():
         for key in ext_dict.keys():

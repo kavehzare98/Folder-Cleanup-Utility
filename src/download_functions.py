@@ -1,8 +1,10 @@
+# download_functions.py
+
 import os
 import collections
 from pprint import pprint
 
-# Define file extension categories
+# Define file extension categories for different types of files
 ext_dict = {'Music': ['mp3','wav','wma','mid','midi'], 
             'Movies': ['mp4', 'mpg', 'mpeg', 'avi','mov','flv','mkv', 'mwv', 'm4v', 'h264'],
             'Pictures': ['png','jpg','JPG','jpeg','gif','svg','bmp','psd','tiff','tif','HEIC'],
@@ -11,7 +13,7 @@ ext_dict = {'Music': ['mp3','wav','wma','mid','midi'],
             'Executables': ['dmg','exe','iso'],
             'Programming': ['py','cpp', 'h']}
 
-# Directories are created only if directory does not exist
+# Function to create directories in a given base path
 def createDirectories(destination_list, base_path):
     for dest_dir in destination_list:
         dir_path = os.path.join(base_path, dest_dir)
@@ -19,7 +21,7 @@ def createDirectories(destination_list, base_path):
             os.mkdir(dir_path)
             print(f"Created a directory for '{dest_dir}'")
 
-# Map files from folder based on their file extension
+# Function to map files in a folder based on their file extension
 def mapFileExtensions(source_path):
     # Create map
     files_mapping = collections.defaultdict(list)
@@ -35,8 +37,7 @@ def mapFileExtensions(source_path):
             files_mapping[file_ext].append(file_name)
     return files_mapping
 
-
-# Move all files given a file extension to a target directory
+# Function to move files to their respective folders based on file extension
 def moveFiles(source_path, base_path, map):
     for f_ext, f_list in map.items():
         for key in ext_dict.keys():

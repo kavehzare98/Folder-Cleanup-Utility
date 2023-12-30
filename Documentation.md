@@ -1,52 +1,64 @@
-## Folder Cleanup Script Documentation
+# File Cleanup Script Documentation
 
-### Overview:
+This documentation provides a detailed explanation of the file cleanup script, which is split across three Python files: `downloads_functions.py`, `main.py`, and `documents_functions.py`.
 
-The provided Python script is a folder cleanup utility that organizes files in the user's Downloads directory into predefined categories based on their file extensions. The script creates destination directories for various file types, such as Music, Movies, Pictures, Documents, Executables, Programming, and Other. Files are then moved from the Downloads directory to their corresponding categories.
+## `downloads_functions.py`
 
-### Dependencies:
+### `ext_dict`
 
-- `os`: Provides a way to interact with the operating system, including file and directory manipulation.
-- `collections`: Utilized to create a defaultdict to store files based on their extensions.
-- `pprint`: Used for pretty-printing the files mapping dictionary.
+- A dictionary that defines file extensions for different categories in the Downloads folder.
 
-### File Categories and Extensions:
+### `createDirectories(destination_directories, base_path)`
 
-- **Audio Files (`EXT_AUDIO`):** mp3, wav, wma, mid, midi
-- **Video Files (`EXT_VIDEO`):** mp4, mpg, mpeg, avi, mov, flv, mkv, mwv, m4v, h264
-- **Image Files (`EXT_IMGS`):** png, jpg, JPG, jpeg, gif, svg, bmp, psd, tiff, tif, HEIC
-- **Document Files (`EXT_DOCS`):** txt, pdf, csv, xls, xlsx, ods, doc, docx, ppt, pptx
-- **Compressed Files (`EXT_COMPR`):** zip, z, tar, pkg, deb
-- **Installer Files (`EXT_INSTL`):** dmg, exe, iso
-- **Programming Files (`EXT_PROG`):** py, cpp, h
+- Creates directories in the specified `base_path` for the given list of `destination_directories` if they do not exist.
 
-### User-defined Base Path and Destination Directories:
+### `mapFileExtensions(base_path)`
 
-- `BASE_PATH`: The user's base directory where the files are all located.
-- `DEST_DIRS`: List of destination directories to organize files into.
+- Maps files in the Documents folder based on their file extensions.
+- Returns a dictionary (`files_mapping`) with file extensions as keys and lists of corresponding file names.
 
-### Directory Creation:
+### `moveFiles(map, base_path)`
 
-- The script creates destination directories if they do not already exist in the user's home directory.
+- Moves files to their respective folders based on file extension using the provided mapping (`map`) and the `ext_dict`.
 
-### Files Mapping:
+## `download_functions.py`
 
-- Files in the Downloads directory are mapped to their respective file extensions using a defaultdict.
+### `ext_dict`
 
-### Moving Files:
+- A dictionary that defines file extensions for different categories, such as music, movies, pictures, documents, compressed files, executables, and programming files.
 
-- Files are moved from the Downloads directory to their appropriate destination directories based on their file extensions.
+### `createDirectories(destination_list, base_path)`
 
-### Example Usage:
+- Creates directories in the specified `base_path` for the given list of `destination_list` if they do not exist.
 
-1. Clone the repository and navigate to the script's directory.
-2. Run the script using the Python interpreter: `python folder_cleanup.py`.
+### `mapFileExtensions(source_path)`
 
-### Notes:
+- Maps files in a folder (`source_path`) based on their file extensions.
+- Returns a dictionary (`files_mapping`) with file extensions as keys and lists of corresponding file names.
 
-- The script ignores hidden files (those starting with a dot `.`) in the directory.
-- File extensions are case-sensitive.
+### `moveFiles(source_path, base_path, map)`
 
-### Disclaimer:
+- Moves files to their respective folders based on file extension using the provided mapping (`map`) and the `ext_dict`.
 
-- Make sure to review and understand the script before running it to avoid unintentional data loss. It's advisable to test the script on a small set of files or in a controlled environment first.
+## `main.py`
+
+### `main()`
+
+- The main function that executes the file cleanup process.
+- Prompts the user to choose between cleaning up the Downloads or Documents folder.
+- Validates user input and performs the cleanup accordingly using functions from `download_functions` and `documents_functions`.
+
+## Usage
+
+To use the script:
+
+1. Run `main.py`.
+2. Enter `1` to cleanup the Downloads folder or `2` to cleanup the Documents folder.
+3. The script will create directories and move files based on their types.
+
+## Notes
+
+- Hidden files (those starting with a dot) are ignored during file mapping.
+- Directories are created only if they do not already exist.
+
+Feel free to modify the script or its documentation based on your specific requirements or coding conventions.

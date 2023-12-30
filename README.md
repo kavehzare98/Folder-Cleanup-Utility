@@ -8,7 +8,7 @@
 
 ## B. Solution
 
-Simplify your file organization with the Folder Cleanup Utility—a collection of Python scripts designed to streamline the management of cluttered directories. This repository provides a set of versatile scripts that intelligently categorize files based on their extensions, effortlessly tidying up your folders and enhancing overall organization.
+This program organizes files in specified folders based on their file extensions. It includes two main modules: `downloads_functions` for cleaning up the Downloads folder and `documents_functions` for cleaning up the Documents folder. The cleanup is categorized into different folders based on file types.
 
 ## C. Benefits
 
@@ -22,7 +22,6 @@ Simplify your file organization with the Folder Cleanup Utility—a collection o
 
 In summary, the software streamlines the process of organizing files, saving users time, improving efficiency, and contributing to a more organized and productive digital workspace.
 
-
 ## D. Features
 
 - **Automated Sorting**: The scripts automatically analyze files within a specified directory and categorize them based on their file extensions.
@@ -32,36 +31,42 @@ In summary, the software streamlines the process of organizing files, saving use
 
 ## E. Getting Started
 
-1. Clone the repository to your local machine:
+### Usage
 
-    
-    ```bash
-    git clone https://github.com/kavehzare98/Folder-Cleanup-Utility
-    ```
-    
-2. Navigate to the project directory:
-    
-    ```bash
-    cd folder-cleanup-utility
-    
-    ```
-    
-3. Run the desired script with Python:
-    
-    ```bash
-    python <Folder_Cleanup>.py
-    
-    ```
-    
-4. Follow the on-screen prompts to specify the target directory and customize rules as needed.
+1. Run `main.py`.
+2. Enter `1` to cleanup the Downloads folder or `2` to cleanup the Documents folder.
+3. The script will create directories and move files based on their types.
 
-## F. Example Usage
+### Modules
 
-```bash
-python Downloads_Folder_Cleanup.py
+#### `downloads_functions.py`
 
-```
+- Defines file extensions for different categories in the Downloads folder.
+- Provides functions to create directories, map files based on extensions, and move files to respective folders.
+
+#### `documents_functions.py`
+
+- Defines file extensions for different document categories.
+- Provides functions to create directories, map files based on extensions, and move files to respective folders.
+
+#### `main.py`
+
+- The main script that prompts the user to choose between cleaning up the Downloads or Documents folder.
+- Executes the cleanup process using functions from `downloads_functions` or `documents_functions`.
+
+### Notes
+
+- Hidden files (those starting with a dot) are ignored during file mapping.
+- Directories are created only if they do not already exist.
+
+### Requirements
+
+- Python 3.x
+
+Feel free to customize the script or its modules based on your specific needs or coding conventions.
+
 ## H. Sources
+
 1. [Curious Coding YouTube Video](https://www.youtube.com/watch?v=5idxowRxWW0)
 2. [OS Documentation](https://docs.python.org/3/library/os.path.html#module-os.path)
 3. [Collections Documentation](https://docs.python.org/3/library/collections.html)
