@@ -1,46 +1,46 @@
 # File Cleanup Script Documentation
 
-This documentation provides a detailed explanation of the file cleanup script, which is split across three Python files: `downloads_functions.py`, `main.py`, and `documents_functions.py`.
+This documentation provides a detailed explanation of the file cleanup script, which is split across three Python files: `documents_functions.py`, `downloads_functions.py`, and `main.py`.
 
-## `downloads_functions.py`
+## A. `documents_functions.py`
 
-### `ext_dict`
+### 1. `ext_dict`
 
 - A dictionary that defines file extensions for different categories in the Downloads folder.
 
-### `createDirectories(destination_directories, base_path)`
+### 2. `createDirectories(destination_directories, base_path)`
 
 - Creates directories in the specified `base_path` for the given list of `destination_directories` if they do not exist.
 
-### `mapFileExtensions(base_path)`
+### 3. `mapFileExtensions(base_path)`
 
 - Maps files in the Documents folder based on their file extensions.
 - Returns a dictionary (`files_mapping`) with file extensions as keys and lists of corresponding file names.
 
-### `moveFiles(map, base_path)`
+### 4. `moveFiles(map, base_path)`
 
 - Moves files to their respective folders based on file extension using the provided mapping (`map`) and the `ext_dict`.
 
-## `download_functions.py`
+## B. `download_functions.py`
 
-### `ext_dict`
+### 1. `ext_dict`
 
 - A dictionary that defines file extensions for different categories, such as music, movies, pictures, documents, compressed files, executables, and programming files.
 
-### `createDirectories(destination_list, base_path)`
+### 2. `createDirectories(destination_list, base_path)`
 
 - Creates directories in the specified `base_path` for the given list of `destination_list` if they do not exist.
 
-### `mapFileExtensions(source_path)`
+### 3. `mapFileExtensions(source_path)`
 
 - Maps files in a folder (`source_path`) based on their file extensions.
 - Returns a dictionary (`files_mapping`) with file extensions as keys and lists of corresponding file names.
 
-### `moveFiles(source_path, base_path, map)`
+### 4. `moveFiles(source_path, base_path, map)`
 
 - Moves files to their respective folders based on file extension using the provided mapping (`map`) and the `ext_dict`.
 
-## `main.py`
+## C. `main.py`
 
 ### `main()`
 
@@ -48,7 +48,7 @@ This documentation provides a detailed explanation of the file cleanup script, w
 - Prompts the user to choose between cleaning up the Downloads or Documents folder.
 - Validates user input and performs the cleanup accordingly using functions from `download_functions` and `documents_functions`.
 
-## Usage
+## D. Usage
 
 To use the script:
 
@@ -56,7 +56,7 @@ To use the script:
 2. Enter `1` to cleanup the Downloads folder or `2` to cleanup the Documents folder.
 3. The script will create directories and move files based on their types.
 
-## Notes
+## E. Notes
 
 - Hidden files (those starting with a dot) are ignored during file mapping.
 - Directories are created only if they do not already exist.
