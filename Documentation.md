@@ -10,19 +10,15 @@ This documentation provides a detailed explanation of the file cleanup script, w
 
 &nbsp;&nbsp;&nbsp;&nbsp;2. `createDirectories(destination_directories, base_path)`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Creates directories in the specified `base_path` for the given list of `destination_directories`
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if they do not exist.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Creates directories in the specified `base_path` for the given list of `destination_directories` if they do not exist.
 
 &nbsp;&nbsp;&nbsp;&nbsp;3. `mapFileExtensions(base_path)`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Maps files in the Documents folder based on their file extensions.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Returns a dictionary (`files_mapping`) with file extensions as keys and lists of corresponding
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file names.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maps files in the Documents folder based on their file extensions. Returns a dictionary (`files_mapping`) with file extensions as keys and lists of corresponding file names.
 
 &nbsp;&nbsp;&nbsp;&nbsp;4. `moveFiles(map, base_path)`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Moves files to their respective folders based on file extension using the provided mapping 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(`map`) and the `ext_dict`.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moves files to their respective folders based on file extension using the provided mapping (`map`) and the `ext_dict`.
 
 ## B. `download_functions.py`
 
@@ -36,8 +32,7 @@ This documentation provides a detailed explanation of the file cleanup script, w
 
 &nbsp;&nbsp;&nbsp;&nbsp;3. `mapFileExtensions(source_path)`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Maps files in a folder (`source_path`) based on their file extensions.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Returns a dictionary (`files_mapping`) with file extensions as keys and lists of corresponding file names.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maps files in a folder (`source_path`) based on their file extensions. Returns a dictionary (`files_mapping`) with file extensions as keys and lists of corresponding file names.
 
 &nbsp;&nbsp;&nbsp;&nbsp;4. `moveFiles(source_path, base_path, map)`
 
