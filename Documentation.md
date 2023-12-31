@@ -4,13 +4,13 @@ This documentation provides a detailed explanation of the file cleanup script, w
 
 ## A. `documents_functions.py`
 
-###   1. `ext_dict`
+&nbsp;&nbsp;&nbsp;&nbsp;### 1. `ext_dict`
 
-- A dictionary that defines file extensions for different categories in the Downloads folder.
+&nbsp;&nbsp;&nbsp;&nbsp;- A dictionary that defines file extensions for different categories in the Downloads folder.
 
-### 2. `createDirectories(destination_directories, base_path)`
+&nbsp;&nbsp;&nbsp;&nbsp;### 2. `createDirectories(destination_directories, base_path)`
 
-- Creates directories in the specified `base_path` for the given list of `destination_directories` if they do not exist.
+&nbsp;&nbsp;&nbsp;&nbsp;- Creates directories in the specified `base_path` for the given list of `destination_directories` if they do not exist.
 
 ### 3. `mapFileExtensions(base_path)`
 
