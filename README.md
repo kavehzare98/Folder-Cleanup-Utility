@@ -62,6 +62,9 @@ In summary, the software streamlines the process of organizing files, saving use
 ### Requirements
 
 - Python 3.x
+- os.py (Miscellaneous operating system interfaces)
+- collections (Container datatypes)
+- pprint (Data pretty printer)
 
 Feel free to customize the script or its modules based on your specific needs or coding conventions.
 
