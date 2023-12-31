@@ -14,11 +14,13 @@ This documentation provides a detailed explanation of the file cleanup script, w
 
 &nbsp;&nbsp;&nbsp;&nbsp;3. `mapFileExtensions(base_path)`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maps files in the Documents folder based on their file extensions. Returns a dictionary (`files_mapping`) with file extensions as keys and lists of corresponding file names.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Maps files in the Documents folder based on their file extensions. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Returns a dictionary (`files_mapping`) with file extensions as keys and lists of corresponding file names.
 
 &nbsp;&nbsp;&nbsp;&nbsp;4. `moveFiles(map, base_path)`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moves files to their respective folders based on file extension using the provided mapping (`map`) and the `ext_dict`.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Moves files to their respective folders based on file extension using the provided mapping (`map`) and the `ext_dict`.
 
 ## B. `download_functions.py`
 
