@@ -2,9 +2,7 @@
 
 ## A. Problem statement
 
-1. <ins>**Disorganization:**<ins>
-
-Over time, files in a folder can become disorganized, making it difficult for users to locate specific files quickly. This software helps maintain a tidy folder structure by categorizing files according to their types.
+1. **Disorganization:** Over time, files in a folder can become disorganized, making it difficult for users to locate specific files quickly. This software helps maintain a tidy folder structure by categorizing files according to their types.
 
 2. **Time-consuming manual organization:** Manually sorting files into different folders based on their types can be a time-consuming task, especially when dealing with a large number of files. The software automates this process, saving users time and effort.
 
