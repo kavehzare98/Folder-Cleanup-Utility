@@ -4,7 +4,7 @@ This documentation provides a detailed explanation of the file cleanup script, w
 
 ## A. `documents_functions.py`
 
-&nbsp;&nbsp;&nbsp;&nbsp;### 1. `ext_dict`
+###&nbsp;&nbsp;&nbsp;&nbsp; 1. `ext_dict`
 
 &nbsp;&nbsp;&nbsp;&nbsp;- A dictionary that defines file extensions for different categories in the Downloads folder.
 
