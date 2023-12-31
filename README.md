@@ -56,7 +56,7 @@ In summary, the software streamlines the process of organizing files, saving use
 
 ### Notes
 
-- Hidden files (those starting with a dot) are ignored during file mapping.
+- Hidden files (those starting with a dot) are ignored during file mapping (e.g. ".localized").
 - Directories are created only if they do not already exist.
 
 ### Requirements
