@@ -34,7 +34,7 @@ def main():
         print("Success\n")
 
     # Cleanup Documents Folder
-    elif user_input == 2:
+    else:
         # Base path where our files are currently located - Documents
         BASE_PATH = os.path.expanduser('~/Documents')
 
@@ -52,8 +52,5 @@ def main():
         
         print("Success\n")
         
-    else:
-        print("ERROR! Unable to perform the requested task.")
-
 # Execute the main function
 main()
